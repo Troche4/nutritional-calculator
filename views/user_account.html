@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Account - Nutritional Calculator</title>
+        <link rel="shortcut icon" type="image/jpg" href="/assets/favicon.ico"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700&display=swap" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
+        <link href="/assets/css/main.css" rel="stylesheet">
+        <link href="/assets/css/user.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <a href="/">
+                <div class="nav-title">Nutritional Calculator</div>
+            </a>
+            <div class="nav-tabs">
+                <a class="nav-link" href="/">
+                    <div class="nav-tab">
+                        <i class="fas fa-home"></i> Home
+                    </div>
+                </a>
+                <a class="nav-link" href="/log">
+                    <div class="nav-tab">
+                        <i class="fas fa-book"></i> Log
+                    </div>
+                </a>
+                <a class="nav-link" href="/goals">
+                    <div class="nav-tab">
+                        <i class="fas fa-chart-bar"></i> Goals
+                    </div>
+                </a>
+                <a class="nav-link active" href="/user/account">
+                    <div class="nav-tab">
+                        <i class="fas fa-user"></i> Account
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div class="button-header">
+                    <h1>Your account</h1>
+                    <p>Login Provider: <span id="provider" style="text-transform: capitalize;"></span></p>
+                    <p>Name: <span id="name"></span></p>
+                </div>
+                <div class="button-row">
+                    <a href="/user/logout" class="signin-button">
+                        <span><b>Log Out</b></span>
+                    </a>
+                </div>
+                <div class="button-header">
+                    <h2>Reset</h2>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-name">Nutritional Calculator</div>
+        </footer>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/assets/scripts/user.js"></script>
+    </body>
+</html>

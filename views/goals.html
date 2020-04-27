@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Goals - Nutritional Calculator</title>
+        <link rel="shortcut icon" type="image/jpg" href="/assets/favicon.ico"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700&display=swap" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
+        <link href="/assets/css/main.css" rel="stylesheet">
+        <link href="/assets/css/goals.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <a href="/">
+                <div class="nav-title">Nutritional Calculator</div>
+            </a>
+            <div class="nav-tabs">
+                <a class="nav-link" href="/">
+                    <div class="nav-tab">
+                        <i class="fas fa-home"></i> Home
+                    </div>
+                </a>
+                <a class="nav-link" href="/log">
+                    <div class="nav-tab">
+                        <i class="fas fa-book"></i> Log
+                    </div>
+                </a>
+                <a class="nav-link active" href="/goals">
+                    <div class="nav-tab">
+                        <i class="fas fa-chart-bar"></i> Goals
+                    </div>
+                </a>
+                <a class="nav-link" href="/user/account">
+                    <div class="nav-tab">
+                        <i class="fas fa-user"></i> Account
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <main>
+            <section class="main-section">
+                <div class="goals-chart" style="height: 80vh; width:75vw">
+                    <canvas id="chart"></canvas>
+                </div>
+            </section>
+            <section class="aside-section">
+                <div class="add-section">
+                    <h1>Add</h1>
+                    <div class="add">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date"><br>
+                        <label for="weight">Weight (lb):</label>
+                        <input type="number" id="weight">
+                        <button class="custom-button green" id="add">Add</button>
+                    </div>
+                </div>
+                <div class="history-section">
+                    <h1>Recent Entries</h1>
+                    <table id="goals-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Weight (lb)</th>
+                            </tr>
+                        </thead>
+                        <tbody>   
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-name">Nutritional Calculator</div>
+        </footer>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+        <script type="text/javascript" src="/assets/scripts/goals.js"></script>
+    </body>
+</html>

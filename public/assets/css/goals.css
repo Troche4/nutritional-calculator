@@ -1,0 +1,77 @@
+main > .main-section {
+    flex: 0 0 50vw;
+}
+
+@media (min-width: 1200px) {
+    main > .aside-section {
+        margin-left: 50px;
+    }
+}
+
+.add-section {
+    width: 300px;
+    border: 1px solid #000;
+    margin-top: 30px;
+}
+
+h1 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    margin-left: 10px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000;
+}
+
+.add {
+    width: 100%;
+    padding: 15px;
+}
+
+.add > button {
+    width: 100%;
+}
+
+.add-section input[type=number],
+.add-section input[type=date] {
+    width: 100%;
+    padding: 5px 15px;
+    border: 1px solid #646464;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 20px;
+    outline: 0;
+    margin-bottom: 8px;
+    -webkit-appearance: none;
+}
+
+.history-section {
+    width: 300px;
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+.history-section > table {
+    border-collapse: collapse;
+    margin: 15px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.history-section > table th {
+    border-bottom: 1px solid #000;
+    padding: 5px;
+}
+
+.history-section > table td {
+    padding: 7px;
+}
+
+.history-section > table tr:nth-child(2n+1) > td {
+    background-color: #eaeaea;
+}
+
+.history-section > table th:first-child,
+.history-section > table td:first-child {
+    border-right: 1px solid #000;
+}
